@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>webhozon</title>
+  <!-- <script src="js/jquery-2.1.3.min.js"></script> -->
+  <link rel='stylesheet' href='css/reset.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header>
+      <h1>Twitter保存ツール</h1>
+    </header>
+    <main>
+     <div class ="twtter">
+      <a class="twitter-timeline" href="https://twitter.com/nikkei?ref_src=twsrc%5Etfw" width="300"
+      height="300">Tweets by nikkei</a> 
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <canvas id="myCanvas" width="400" height="300"></canvas>
+    <canvas id="myCanvas2" width="400" height="300"></canvas>
+      <input type="text" id="key" placeholder="ここにタイトルが入ります">
+      
+      <!-- <input type="text" id="key2" placeholder="ここにテキストが入ります"> -->
+
+      <form method="post" enctype="multipart/form-data">
+        <input type="file" id="pic">
+        </form>
+      <ul>
+            <li id="save">Save</li>
+            <li id="clear">Clear</li>
+      </ul>
+    </main>
+
+    <div class="localstrage">
+    この下に保存されます    
+    </div>
+    <ul id="list">
+        <!-- ここに追加データが挿入される -->
+    </ul>
+
+</script>
+
+
+    <footer>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+    
+</html>
